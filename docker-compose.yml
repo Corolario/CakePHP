@@ -2,5 +2,5 @@ version: '3'
 services:
     cakephp:
     build:
-        context: .
+        context: https://github.com/Corolario/CakePHP.git
         ckerfile: CakePHP-Dockerfile
