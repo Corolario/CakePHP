@@ -1,2 +1,2 @@
 # CakePHP
-Instala o CakePHP em um container Docker via Dockerfile
+Instala o CakePHP em um container Docker via Dockerfile.
