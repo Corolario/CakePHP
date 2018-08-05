@@ -1,6 +1,6 @@
 version: '3.7'
 services:
     cakephp:
-    build:
-        context: https://github.com/Corolario/CakePHP.git
-        dockerfile: CakePHP-Dockerfile
+        build:
+            context: https://github.com/Corolario/CakePHP.git
+            dockerfile: Dockerfile
