@@ -2,6 +2,5 @@ version: '3.3'
 services:
     cakephp:
         build:
-        image: CakePHP:V1
             context: https://github.com/Corolario/CakePHP.git
             dockerfile: CakePHP-Dockerfile
