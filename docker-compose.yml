@@ -3,4 +3,4 @@ services:
     cakephp:
         build:
             context: https://github.com/Corolario/CakePHP.git
-            dockerfile: Dockerfile
+            dockerfile: CakePHP-Dockerfile
