@@ -4,5 +4,5 @@ RUN apt-get update && apt-get install -y apache2 #curl unzip php7.0 php7.0-intl 
 && rm -rf /var/lib/apt/lists/*
 
 EXPOSE 80
-
-CMD ["/usr/sbin/apache2ctl", "-D", "FOREGROUND"]
+CMD ["-D", "FOREGROUND"]
+ENTRYPOINT ["apachectl"]
