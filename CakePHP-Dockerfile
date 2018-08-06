@@ -3,5 +3,6 @@ RUN apt-get update #&& apt-get install -y apache2 curl unzip php7.0 php7.0-intl 
 && rm -rf /var/lib/apt/lists/*
 
 COPY apache2-foreground /usr/local/bin/
+run chmod +x /usr/local/bin/apache2-foreground
 EXPOSE 80
 CMD ["apache2-foreground"]
