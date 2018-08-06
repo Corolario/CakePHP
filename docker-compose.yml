@@ -5,4 +5,4 @@ services:
             context: https://github.com/Corolario/CakePHP.git
             dockerfile: CakePHP-Dockerfile
         ports:
-            - 80
+            - 8080:80
