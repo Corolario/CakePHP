@@ -6,3 +6,10 @@ services:
             dockerfile: CakePHP-Dockerfile
         ports:
             - 8080:80
+    mariadb:
+        image: mariadb
+        environment:
+            MYSQL_ROOT_PASSWORD: senharoot
+            MYSQL_DATABASE: cakephp
+            MYSQL_USER: usuariocake
+            MYSQL_PASSWORD: senhacake
