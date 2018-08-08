@@ -11,7 +11,7 @@ RUN composer create-project --prefer-dist cakephp/app
 ADD https://raw.githubusercontent.com/Corolario/CakePHP/master/cakephp.conf /etc/apache2/sites-available/
 
 RUN a2dissite 000-default.conf \
-&& a2enmod rewrite
+&& a2enmod rewrite \
 && a2ensite cakephp
 
 CMD ["-D", "FOREGROUND"]
