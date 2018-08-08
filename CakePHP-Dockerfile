@@ -6,6 +6,8 @@ RUN apt-get update && apt-get install -y apache2 curl unzip php7.0 php7.0-intl p
 RUN curl -s https://getcomposer.org/installer | php \
 && mv composer.phar /usr/local/bin/composer
 
+RUN composer create-project --prefer-dist cakephp/app
+
 ADD https://raw.githubusercontent.com/Corolario/CakePHP/master/cakephp.conf /etc/apache2/sites-available/
 
 RUN a2dissite 000-default.conf \
