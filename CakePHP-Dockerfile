@@ -8,7 +8,7 @@ RUN curl -s https://getcomposer.org/installer | php \
 
 WORKDIR /var/www/
 RUN composer create-project --prefer-dist cakephp/app
-#RUN sed -i "s#'host' => 'localhost'#'host' => 'mariadb'#/g" /var/www/app/config/app.php
+RUN sed -i "245,255 { s|'host' => 'localhost'|'host' => 'mariadb'|g }" /var/www/app/config/app.php
 
 ADD https://raw.githubusercontent.com/Corolario/CakePHP/master/cakephp.conf /etc/apache2/sites-available/
 
