@@ -1,6 +1,6 @@
 FROM debian:stretch
 
-RUN apt-get update && apt-get install -y apache2 curl unzip php7.0 php7.0-intl php7.0-mbstring php7.0-xml php7.0-mysql \
+RUN apt-get update && apt-get install -y apache2 curl git unzip php7.0 php7.0-intl php7.0-mbstring php7.0-xml php7.0-mysql \
 && rm -rf /var/lib/apt/lists/*
 
 RUN curl -s https://getcomposer.org/installer | php \
